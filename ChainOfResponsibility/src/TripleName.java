@@ -15,7 +15,7 @@ public class TripleName implements Chain{
                     n.getNameLenght()[2] +" }");
 
         }else {
-            System.out.println("4 names is too much sorry :( ");
+            nextInChain.process(n);
         }
     }
 }
