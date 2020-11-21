@@ -1,3 +1,8 @@
+package playerinfield;
+
+import playerinfield.Goalkeeper;
+import playerinfield.IReferee;
+
 public class Main {
     public static void main(String[] args) {
         IReferee refereeMediator = new Referee();

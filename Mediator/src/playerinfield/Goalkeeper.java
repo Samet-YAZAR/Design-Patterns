@@ -1,4 +1,6 @@
-public class Goalkeeper  implements Whistle{
+package playerinfield;
+
+public class Goalkeeper  implements Whistle {
     private IReferee refereeMediator;
 
     public Goalkeeper(IReferee refereeMediator){

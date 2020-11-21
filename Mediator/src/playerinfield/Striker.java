@@ -1,4 +1,8 @@
-public class Striker implements Whistle{
+package playerinfield;
+
+import playerinfield.IReferee;
+
+public class Striker implements Whistle {
     private IReferee refereeMediator;
 
     public Striker(IReferee refereeMediator){

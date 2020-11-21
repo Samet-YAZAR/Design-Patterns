@@ -1,4 +1,9 @@
-public class Referee implements IReferee{
+package playerinfield;
+
+import playerinfield.Goalkeeper;
+import playerinfield.IReferee;
+
+public class Referee implements IReferee {
     private Goalkeeper goalkeeper;
     private Striker striker;
     private Boolean ready;
