@@ -4,7 +4,7 @@ import java.util.List;
 public class CareTaker {
 
     private ArrayList<Memento> history;
-    private int lastMemory = -1;
+    private int lastMemory = -1; //current
 
     public CareTaker() { // Each time we call this class, arraylist is created.
         this.history = new ArrayList<>();

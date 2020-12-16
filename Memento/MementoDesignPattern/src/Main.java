@@ -1,12 +1,19 @@
 public class Main {
 
     public static void main(String[] args) {
+
+
         Originator originator = new Originator();
         CareTaker careTaker= new CareTaker();
+
+        originator.restore(careTaker.redo());
+        printMemento(originator);
 
         originator.setArticle("First Day in School");
         careTaker.addMemento(originator.save());
         printMemento(originator);
+
+
 
         originator.setArticle("First Day in University");
         careTaker.addMemento(originator.save());
@@ -15,8 +22,7 @@ public class Main {
         originator.restore(careTaker.undo());
         printMemento(originator);
 
-        originator.restore(careTaker.redo());
-        printMemento(originator);
+
 
 
         originator.setArticle("First Day in Abroad");
@@ -27,14 +33,11 @@ public class Main {
         careTaker.addMemento(originator.save());
         printMemento(originator);
 
-        originator.setArticle("First Day in Ballet Course");
-        careTaker.addMemento(originator.save());
-        printMemento(originator);
 
         originator.restore(careTaker.undo());
         originator.restore(careTaker.undo());
         originator.restore(careTaker.undo());
-        originator.restore(careTaker.undo());
+
         printMemento(originator);
 
 
